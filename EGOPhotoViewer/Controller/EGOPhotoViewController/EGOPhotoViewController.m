@@ -324,6 +324,15 @@
 		[self.navigationController setToolbarHidden:YES animated:NO];
 		return;
 	}
+    
+    UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone
+                                                                                target:self 
+                                                                                action:@selector(done:)];
+    
+    [doneButton setTintColor:[UIColor blackColor]];
+    
+    self.navigationItem.rightBarButtonItem = doneButton;
+    [doneButton release];
 	
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 30200
 	if (!_popover && UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPad && !_fromPopover) {
