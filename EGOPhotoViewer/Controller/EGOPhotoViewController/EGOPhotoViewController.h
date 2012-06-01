@@ -54,7 +54,6 @@
 	UIColor* _oldToolBarTintColor;	
 	BOOL _oldToolBarHidden;
 
-	BOOL _autoresizedPopover;
 	id _popover;
 	
 	BOOL _fullScreen;
