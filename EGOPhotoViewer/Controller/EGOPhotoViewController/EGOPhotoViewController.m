@@ -329,7 +329,7 @@
                                                                                 target:self 
                                                                                 action:@selector(done:)];
     
-    [doneButton setTintColor:[UIColor blackColor]];
+    // [doneButton setTintColor:[UIColor blackColor]];
     
     self.navigationItem.rightBarButtonItem = doneButton;
     [doneButton release];
